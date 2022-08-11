@@ -11,6 +11,9 @@
   #root {
     @apply h-full bg-primary;
   }
+  :root {
+    --img-amazon-originals: url("https://m.media-amazon.com/images/G/01/digital/video/web_cats/Amazon-Originals.png");
+  }
   .container {
     max-width: 100%;
   }
@@ -20,5 +23,7 @@
   .header-nav-active {
     @apply pb-[2px] border-b border-white !text-white;
   }
-  /* ... */
+  .headerNav-dropdown:hover .headerNav-dropdown_menu {
+    display: block;
+  }
 }

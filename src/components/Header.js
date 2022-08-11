@@ -1,46 +1,14 @@
 import Logo from "assets/svg/logo.svg";
 import IconSearch from "assets/svg/search.svg";
+import HeaderNav from "./HeaderNav";
 
 const Header = () => {
   return (
     <>
-      <header className="bg-gradient-to-r from-secondary to-[#1b2530]">
+      <header className="bg-gradient-to-r from-[#1a232e] via-secondary to-secondary relative">
         <div className="flex items-center py-4 px-12 h-[80px]">
           <img src={Logo} className="w-[112px] object-cover" alt="logo" />
-          <nav className="sm:block md:flex px-4">
-            <div className="mx-2">
-              <a
-                href="#!"
-                className="text-neutral-300 hover:text-white items-center text-[17px] font-medium header-nav-active"
-              >
-                Home
-              </a>
-            </div>
-            <div className="mx-2 items-center">
-              <a
-                href="#!"
-                className="text-neutral-300 hover:text-white items-center text-[17px] font-medium"
-              >
-                TV Shows
-              </a>
-            </div>
-            <div className="mx-2 items-center">
-              <a
-                href="#!"
-                className="text-neutral-300 hover:text-white items-center text-[17px] font-medium"
-              >
-                Movies
-              </a>
-            </div>
-            <div className="mx-2 items-center">
-              <a
-                href="#!"
-                className="text-neutral-300 hover:text-white items-center text-[17px] font-medium"
-              >
-                Categories
-              </a>
-            </div>
-          </nav>
+          <HeaderNav />
           <div className="ml-auto mr-0">
             <div className="relative">
               <input
