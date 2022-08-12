@@ -26,4 +26,15 @@
   .headerNav-dropdown:hover .headerNav-dropdown_menu {
     display: block;
   }
+
+  .movieCard {
+    @apply transition-all scale-[.97];
+  }
+  .movieCard:hover .movieCard-body {
+    display: block;
+  }
+  .movieCard:hover {
+    margin-top: -12px;
+    @apply scale-100;
+  }
 }
